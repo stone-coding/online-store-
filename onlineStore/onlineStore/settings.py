@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'book' # plan 1
-    'commodity.apps.CommodityConfig',  # plan 2
+    'commodity',  # plan 1
+    # 'commodity.apps.CommodityConfig',  # plan 2
 ]
 
 MIDDLEWARE = [
@@ -75,6 +75,8 @@ WSGI_APPLICATION = 'onlineStore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# sqlite3 relational database
+#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
